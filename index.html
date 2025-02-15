@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Professional Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        *{
+            padding-top: 10;
+            margin-top: 10;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+            background-color: #f8f9fa;
+        }
+        nav {
+            background-color: #222;
+            padding: 1em;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
+        #home {
+            position: relative;
+            height: 100vh;
+            overflow: hidden;
+        }
+        #home img {
+            width: 100%;
+            height: 100vh;
+            object-fit: cover;
+            object-position: center;
+        }
+        .hire-me {
+            position: absolute;
+            top: 50%;
+            left: 70%;
+            transform: translate(-50%, -50%);
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-size: 1.2em;
+            transition: 0.3s;
+        }
+        .hire-me:hover {
+            background-color: #e68900;
+        }
+        section {
+            padding: 80px 20px;
+        }
+        .resume-download a {
+            background-color: #007bff;
+            color: white;
+            padding: 10px 20px;
+            border-radius: 5px;
+            text-decoration: none;
+            display: inline-block;
+            margin-top: 20px;
+        }
+        .resume-download a:hover {
+            background-color: #0056b3;
+        }
+        .skill-bar {
+            width: 80%;
+            margin: 10px auto;
+            text-align: left;
+        }
+        .skill-bar p {
+            margin: 5px 0;
+            font-weight: bold;
+        }
+        .bar {
+            height: 20px;
+            background-color: #ddd;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+        .progress {
+            height: 20px;
+            line-height: 20px;
+            color: white;
+            text-align: center;
+            background-color: #007bff;
+            border-radius: 10px;
+        }
+        #about {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: left;
+            max-width: 1000px;
+            margin: auto;
+        }
+        #about img {
+            width: 300px;
+            height: 300px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .about-text {
+            max-width: 600px;
+        }
+        .education-container {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-width: 1000px;
+            margin: auto;
+            text-align: left;
+        }
+        .education, .expertise {
+            width: 45%;
+        }
+        .projects {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+            max-width: 1000px;
+            margin: auto;
+            font-size: large;
+        }
+        .project-item {
+            width: 45%;
+            text-align: left;
+            display: flex;
+            align-items: center;
+            gap: 20px;
+        }
+        .project-img {
+            width: 30%;
+            max-width: 300px;
+            height: auto;
+            border-radius: 10px;
+
+        }
+        section {
+            padding: 20px;
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#skills">Skills</a></li>
+            <li><a href="#contact">Contact</a></li>
+        </ul>
+    </nav>
+    
+    <section id="home">
+        <img src="portfolio image.jpg" alt="Portfolio Background">
+        <a href="#contact" class="hire-me">Hire Me</a>
+    </section>
+    
+    <section id="about">
+        <img src="portfolio image.jpg" alt="Profile Image">
+        <div class="about-text">
+            <h2>About Me</h2>
+            <p>My name is Jyothi Sree Malakatalla, and I am a dedicated individual with a strong academic background and a passion for technology.</p>
+            <p>I recently completed my MCA with an outstanding 8.1 CGPA, following an 9.17 CGPA in my undergraduate degree in Computer Science. I have secured 9.21 in my intermediate and 8.8 in my SSC, maintaining a consistent record of academic excellence.</p>
+            <p>I am currently expanding my skills in CORE JAVA and ADVANCED JAVA, HTML, CSS, and Bootstrap,Javascript to build efficient, user-friendly applications.</p>
+        </div>
+    </section>
+    <section id="education">
+        <h2>Education & Expertise</h2>
+        <div class="education-container">
+            <div class="education">
+                <h3>Education</h3>
+                <ul>
+                    <li><strong>Master of Computer Applications (MCA)</strong> || 8.59 CGPA || 2022-2024<br>Jawaharlal Nehru Technological University, Anantapur</li>
+                    <li><strong>Bachelor of Science (MPCS)</strong> || 8.60 CGPA || 2019-2022<br>Sri Govindaraja Swamy Arts College, Tirupati</li>
+                    <li><strong>Intermediate (MPC)</strong> || 9.94 CGPA || 2017-2019<br>Masters Junior College of Arts & Science, Kurnool (Dist.)</li>
+                    <li><strong>Secondary School Education</strong> || 9.5 GPA || 2017<br>Z P High School, Illuri Kothapeta (V), Banaganapalle (M), Nandyal (Dist.)</li>
+                </ul>
+            </div>
+            <div class="expertise">
+                <h3>Expertise</h3>
+                <ul>
+                    <li><strong>Core Java:</strong> Arrays, Strings, Methods, OOPS, Exception Handling, Multi-threading, Collections, Maps.</li>
+                    <li><strong>Advanced Java:</strong> JDBC, Create Statement, Prepared Statement, Batch Processing, ACID, DAO Design, J2EE, Servlet, JSP.</li>
+                    <li><strong>MySQL:</strong> CRUD Operations, Subqueries, Functions, Joins, Triggers, Normalization.</li>
+                    <li><strong>Technologies:</strong> HTML5, CSS3, Bootstrap.</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects">
+            <div class="project-item">
+                <img src="project2.jpg" alt="Automation Invigilation Duties" class="project-img">
+                <div>
+                    <strong>Automation Invigilation Duties</strong>
+                    <p>Developed a system to automate the assignment of invigilation duties using Java, HTML, and MySQL.</p>
+                </div>
+            </div>
+            <div class="project-item">
+                <img src="project1.png" alt="E-Smart Book Store" class="project-img">
+                <div>
+                    <strong>E-Smart Book Store</strong>
+                    <p>Created an online book store application for easy browsing and purchasing of books using Java, MySQL, and web technologies.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section id="skills">
+        <h2>Technical Skills</h2>
+        <div class="skill-bar"><p>Core Java</p><div class="bar"><div class="progress" style="width: 95%">95%</div></div></div>
+        <div class="skill-bar"><p>Advanced Java</p><div class="bar"><div class="progress" style="width: 90%">90%</div></div></div>
+        <div class="skill-bar"><p>MySQL</p><div class="bar"><div class="progress" style="width: 90%">90%</div></div></div>
+        <div class="skill-bar"><p>HTML, CSS, Bootstrap</p><div class="bar"><div class="progress" style="width: 90%">90%</div></div></div>
+        <div class="skill-bar"><p>JavaScript</p><div class="bar"><div class="progress" style="width: 85%">85%</div></div></div>
+    </section>
+    
+    <section id="contact">
+        <h2>Contact</h2>
+        <p>Address: NG Comforts, 7th cross road, Aswath Nagar, Marathalli, Bangalore</p>
+        <iframe src="https://maps.google.com/maps?q=NG%20Comforts,%20Marathalli,%20Bangalore&t=&z=15&ie=UTF8&iwloc=&output=embed" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        <p>Mobile: +91 9390141226</p>
+        <p>Email: <a href="mailto:jyothisree3278@gmail.com">jyothisree3278@gmail.com</a></p>
+        <div class="resume-download"><a href="Resume Jyothi Sree.pdf" download>Download Resume</a></div>
+    </section>
+</body>
+</html>
